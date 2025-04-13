@@ -1,0 +1,84 @@
+/* Carousel.css */
+.carousel-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    max-width: 100%;
+    margin: 1rem 0;
+    padding: 0 2rem;
+  }
+  
+  .interests-carousel {
+    display: flex;
+    gap: 0.75rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    padding: 0.5rem 0;
+    flex: 1;
+  }
+  
+  .interests-carousel::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .interest-item {
+    padding: 0.5rem 1.25rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #4b5563;
+    background-color: #f3f4f6;
+    transition: all 0.3s ease;
+    flex: 0 0 auto;
+    border: 1px solid #e5e7eb;
+    white-space: nowrap;
+  }
+  
+  .interest-item:hover {
+    background-color: #e5e7eb;
+    color: #1f2937;
+  }
+  
+  .interest-item.active {
+    background-color: #000;
+    color: #fff;
+    border-color: #000;
+  }
+  
+  .carousel-arrow {
+    position: absolute;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color: white;
+    border: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 2;
+    color: #4b5563;
+    transition: all 0.2s ease;
+  }
+  
+  .carousel-arrow:hover {
+    background-color: #f3f4f6;
+    color: #1f2937;
+    transform: scale(1.05);
+  }
+  
+  .carousel-arrow.left {
+    left: 0;
+  }
+  
+  .carousel-arrow.right {
+    right: 0;
+  }
+  
+  .carousel-arrow svg {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
