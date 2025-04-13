@@ -17,7 +17,7 @@ const BlogDetail = () => {
       try {
         setLoading(true);
         const res = await axios.get(
-          `http://localhost:5000/getUniqueBlog/${blogId}`
+          `https://blog-website-vmrz.onrender.com/getUniqueBlog/${blogId}`
         );
 
         if (res.data && res.data[0]) {

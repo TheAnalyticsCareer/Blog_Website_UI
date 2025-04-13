@@ -42,7 +42,7 @@ const NewsLinks = ({ news: initialNews }) => {
   const fetchNews = async (topic) => {
     setLoading(true);
     try {
-      const response = await axios.get(`http://localhost:5000/api/news/${topic}`);
+      const response = await axios.get(`https://blog-website-vmrz.onrender.com/api/news/${topic}`);
       setNews(response.data);
       setError(null);
     } catch (err) {

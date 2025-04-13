@@ -17,7 +17,7 @@ const Blogs = () => {
   const getAllBlogs = async () => {
     try {
       setLoading(true);
-      const res = await axios.get(`http://localhost:5000/blogs`);
+      const res = await axios.get(`https://blog-website-vmrz.onrender.com/blogs`);
       setBlogs(res?.data);
       setError(null);
     } catch (err) {
