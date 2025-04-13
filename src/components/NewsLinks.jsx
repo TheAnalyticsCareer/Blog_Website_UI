@@ -1,6 +1,6 @@
 
 import React, { useRef, useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+
 import axios from "axios";
 import "./NewsLinks.css";
 
@@ -11,7 +11,7 @@ const NewsLinks = ({ news: initialNews }) => {
   const [topic, setTopic] = useState("AI");
   const [activeCategory, setActiveCategory] = useState(0);
 
-  const navigate = useNavigate();
+  
   const carouselRef = useRef(null);
 
   const categories = [

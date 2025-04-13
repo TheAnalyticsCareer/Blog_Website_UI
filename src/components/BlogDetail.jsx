@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams} from "react-router-dom";
 import { marked } from "marked";
 import "./BlogDetail.css";
 
 const BlogDetail = () => {
   const { blogId } = useParams();
-  const navigate = useNavigate();
+ 
   const [blog, setBlog] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
