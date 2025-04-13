@@ -1,5 +1,3 @@
-
-
 import React from "react";
 import { useState, useEffect } from "react";
 import axios from "axios";
@@ -16,8 +14,10 @@ const Blogs = () => {
 
   const getAllBlogs = async () => {
     try {
+      console.log("sending request to backend------")
       setLoading(true);
       const res = await axios.get(`https://blog-website-vmrz.onrender.com/blogs`);
+      console.log("res from backend-----",res)
       setBlogs(res?.data);
       setError(null);
     } catch (err) {
