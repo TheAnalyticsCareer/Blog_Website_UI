@@ -12,7 +12,7 @@ const NewsLinks = ({ news: initialNews }) => {
   const [activeCategory, setActiveCategory] = useState(0);
 
   
-  const carouselRef = useRef(null);
+  
 
   const categories = [
     "AI",
@@ -65,7 +65,7 @@ const NewsLinks = ({ news: initialNews }) => {
     } else {
       setLoading(false);
     }
-  }, []);
+  }, [initialNews]);
 
   if (loading) {
     return (
