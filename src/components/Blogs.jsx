@@ -14,10 +14,10 @@ const Blogs = () => {
 
   const getAllBlogs = async () => {
     try {
-      console.log("sending request to backend------")
+     
       setLoading(true);
       const res = await axios.get(`https://tech-blog-wz2z.onrender.com/blogs`);
-      console.log("res from backend-----",res)
+     
       setBlogs(res?.data);
       setError(null);
     } catch (err) {
