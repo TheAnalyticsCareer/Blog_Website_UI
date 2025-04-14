@@ -17,7 +17,7 @@ const BlogDetail = () => {
       try {
         setLoading(true);
         const res = await axios.get(
-          `https://blog-website-vmrz.onrender.com/getUniqueBlog/${blogId}`
+          `https://tech-blog-wz2z.onrender.com/getUniqueBlog/${blogId}`
         );
 
         if (res.data && res.data[0]) {
