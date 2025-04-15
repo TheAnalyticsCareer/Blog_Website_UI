@@ -42,7 +42,7 @@ const NewsLinks = ({ news: initialNews }) => {
   const fetchNews = async (topic) => {
     setLoading(true);
     try {
-      const response = await axios.get(`https://tech-blog-wz2z.onrender.com/api/news/${topic}`);
+      const response = await axios.get(`http://localhost:5577/api/news/${topic}`);
       setNews(response.data);
       setError(null);
     } catch (err) {
@@ -98,8 +98,9 @@ const NewsLinks = ({ news: initialNews }) => {
   }
 
   return (
-    <div className="news-app">
-      <div className="category-selector">
+
+    <>
+    <div className="category-selector">
         {categories.map((category, index) => (
           <button
             key={index}
@@ -114,6 +115,8 @@ const NewsLinks = ({ news: initialNews }) => {
           </button>
         ))}
       </div>
+    <div className="news-app">
+      
 
       <div className="news-grid">
         {news.map((article, index) => (
@@ -159,6 +162,7 @@ const NewsLinks = ({ news: initialNews }) => {
         ))}
       </div>
     </div>
+    </>
   );
 };
 
