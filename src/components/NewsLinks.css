@@ -19,6 +19,7 @@
   padding: 1rem 0.5rem;
   margin-bottom: 2rem;
   scrollbar-width: none;
+  position: fixed;
 }
 
 .category-selector::-webkit-scrollbar {
