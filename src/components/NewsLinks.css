@@ -13,16 +13,19 @@
 
 /* Category Selector */
 .category-selector {
-  width: 100%;
   display: flex;
   gap: 0.75rem;
   overflow-x: auto;
   padding: 1rem 0.5rem;
+  padding-top: 50px;
   margin-bottom: 2rem;
   scrollbar-width: none;
+
   position: fixed;
-  z-index: 1000;
   background-color: #ffffff;
+  z-index: 1000;
+  width: 100%;
+  top: 82px;
 }
 
 .category-selector::-webkit-scrollbar {
@@ -56,6 +59,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 2rem;
+  margin-top: 100px;
 }
 
 .news-card {
