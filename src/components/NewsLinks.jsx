@@ -213,7 +213,7 @@ const NewsLinks = ({ news: initialNews }) => {
     setLoading(true);
     try {
       const response = await axios.get(
-        `http://localhost:5577/api/news/${topic}`
+        `https://tech-blog-wz2z.onrender.com/api/news/${topic}`
       );
 
       const filteredAndSorted = response.data
